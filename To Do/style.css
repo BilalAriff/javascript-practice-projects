@@ -1,0 +1,70 @@
+
+body {
+    background-color: #4285f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mobile-container {
+    overflow: hidden;
+    background-color: white;
+    max-width: 400px;
+    min-width: 400px;
+    min-height: 700px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.app-header {
+    /* background-image: url('img/header-bg.jpg'); */
+    background-color: #2e65c1;
+    background-size: cover;
+    background-position: center;
+    padding: 1.5em;
+    color: white;
+    min-height: 180px;
+}
+
+.welcome-screen {
+    height: 700px;
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.add-task-btn {
+    font-size: 2em;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+    z-index: 99999;
+}
+
+.todo-list-item {
+    list-style: none;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 2px solid lightblue;
+}
+.todo-list-item h5 {
+    font-weight: bold;
+}
+.todo-list-item.task-completed p,
+.todo-list-item.task-completed h5 { 
+    color: green;
+    text-decoration: line-through;
+ }
+

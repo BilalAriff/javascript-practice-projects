@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>My To DO App</title>
+  </head>
+  <body>
+  
+    <div class="mobile-container mt-5">
+
+      <div id="welcomeScreen" class="welcome-screen">
+        <img src="img/edit.png" width="80px" alt="">
+        <h3 class="mt-5">Welcome</h3>
+        <h5 class="mt-5">My To-Do</h5>
+        <p>Welcome to my Vanila JavaScript To Do App</p>
+        <input required placeholder="What's your Name?" type="text" id="usernameForm" class="mt-5 form-control">
+        <button id="usernameBtn" class="btn btn-primary mt-3">Enter</button>
+      </div>
+
+      <div id="appHeader" class="app-header d-none">
+        <h2>Welcome!</h2>
+        <h3 id="displayUsername">""</h3>
+      </div>
+
+      <div id="todoListParent" class="todo-list-parent p-3 d-none">
+        <ul id="todoList" class="todo-list">
+          
+        </ul>
+      </div>
+
+      <!-- Add New Task Modal Button -->
+      <button type="button" class="btn btn-primary add-task-btn" data-bs-toggle="modal" data-bs-target="#addNewTaskModal">
+        <span>+</span>
+      </button>
+
+    </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="addNewTaskModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Enter Task Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="form">
+                <div class="form-group">
+                  <label for="">Enter Title</label>
+                  <input required id="taskTitle" class="form-control" type="text">
+                </div>
+                <div class="form-group mt-4">
+                  <label for="">Enter Short Detail of your task</label>
+                  <input required id="taskDescription" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer text-center">
+              <button id="addTask" class="btn btn-success">Add Task</button>
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

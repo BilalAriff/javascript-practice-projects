@@ -1,0 +1,24 @@
+
+.container {
+    margin-top: 10em;
+}
+
+.my-box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 12px;
+}
+
+.square-box {
+    width: 100px !important;
+    height: 100px !important;
+    transition: 0.3s;
+}
+
+.round-box {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50px;
+    transition: 0.3s;
+}
